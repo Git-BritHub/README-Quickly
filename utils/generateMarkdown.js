@@ -14,7 +14,7 @@ function renderLicenseLink(data) {
   if(data.license === "None") {
     return ""
   } else {
-    return "* [License](#license)"
+    return data.license
   }
 }
 
@@ -30,9 +30,10 @@ function generateMarkdown(data) {
   * [Description](#description)
   * [Installation](#installation)
   * [Usage](#usage)
-  ${renderLicenseLink(data)}
+  * [License](#license)
   * [Contributing](#contributing)
   * [Tests](#tests)
+  * [Questions](#questions)
 
   ## Description
   ${data.description}
@@ -43,8 +44,9 @@ function generateMarkdown(data) {
   ## Usage
   ${data.usage}
 
-  ## Licence
+  ## License
   ${renderLicenseLink(data)}
+  ${renderLicenseBadge(data)}
 
   ## Contributing
   ${data.contributing}
@@ -53,8 +55,10 @@ function generateMarkdown(data) {
   ${data.tests}
 
   ## Questions
-  If you find any bugs, or have any questions about this project, feel free to reach out to me by email: ${data.questions}
+  If you find any bugs or have any questions, feel free to reach out to me through GitHub or email.
+  ${data.question1}
+  ${data.question2}
 `;
 }
-
+// TODO: explore option to create hyperlink for github or email response
 module.exports = generateMarkdown;
