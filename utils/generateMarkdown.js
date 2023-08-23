@@ -26,7 +26,7 @@ function renderLicenseSection(data) {}
 function generateMarkdown(data) {
   return `# ${data.title}
 
-  ## Table of Content
+  ## Table of Contents
   * [Description](#description)
   * [Installation](#installation)
   * [Usage](#usage)
@@ -56,8 +56,8 @@ function generateMarkdown(data) {
 
   ## Questions
   If you find any bugs or have any questions, feel free to reach out to me through GitHub or email.
-  ${data.question1}
-  ${data.question2}
+  ${data.questions1}
+  ${data.questions2}
 `;
 }
 // TODO: explore option to create hyperlink for github or email response

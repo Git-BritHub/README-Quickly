@@ -1,6 +1,6 @@
-# README
+# README Quickly
 
-  ## Table of Content
+  ## Table of Contents
   * [Description](#description)
   * [Installation](#installation)
   * [Usage](#usage)
@@ -10,25 +10,25 @@
   * [Questions](#questions)
 
   ## Description
-  ddd
+  A README.md generator for developers desiring to create their README file in less time and more efficiently
 
   ## Installation
-  ddd
+  Instructions on how to install go here
 
   ## Usage
-  ddd
+  Instructions on how to use this generator go here
 
   ## License
   MIT
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Contributing
-  sdf
+  Created by Brittany Brimley
 
   ## Tests
-  fd
+  ugh
 
   ## Questions
   If you find any bugs or have any questions, feel free to reach out to me through GitHub or email.
-  githubbbbb
-  emaaaail
+  Git-BritHub
+  email@email.com
