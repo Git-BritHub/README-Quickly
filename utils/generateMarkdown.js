@@ -37,6 +37,21 @@ function generateMarkdown(data) {
   ## Description
   ${data.description}
 
+  ## Installation
+  ${data.installation}
+
+  ## Usage
+  ${data.usage}
+
+  ## Licence
+  ${renderLicenseLink(data)}
+
+  ## Contributing
+  ${data.contributing}
+
+  ## Tests
+  ${data.tests}
+
   ## Questions
   If you find any bugs, or have any questions about this project, feel free to reach out to me by email: ${data.questions}
 `;
