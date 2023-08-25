@@ -1,9 +1,20 @@
 // function that returns a license badge based on which license is passed in
+// Have added some of the more commonly used licenses for badges below
 function renderLicenseBadge(data) {
   if(data.license === "None") {
     return ""
-  } else if(data.license === "MIT") {
+  } else if(data.license === "MIT License") {
     return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+  } else if(data.license === "Apache License 2.0") {
+    return "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
+  } else if(data.license === "BSD 3-Clause License") {
+    return "[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)"
+  } else if(data.license === "GNU GPL v3") {
+    return "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)"
+  } else if(data.license === "ISC License") {
+    return "[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)"
+  } else if(data.license === "The Unlicense") {
+    return "[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)"
   }
 }
 
@@ -54,12 +65,10 @@ function generateMarkdown(data) {
   ${data.tests}
 
   ## Questions
-  If you find any bugs or have any questions, feel free to reach out to me through GitHub or email.
-  ${data.questions1}
-  ${data.questions2}
+  If you find any bugs or have any questions, feel free to reach out to me through GitHub at ${data.questions1} or email ${data.questions2}. Thanks and happy coding!
 `;
 }
 // TODO: explore option to create hyperlink for github or email response
-// TODO: add <br /> where needed to make layout more appealing
+
 // TODO: create tests built into app
 module.exports = generateMarkdown;
