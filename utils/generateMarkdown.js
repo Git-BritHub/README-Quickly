@@ -24,13 +24,20 @@ function renderLicenseLink(data) {
   if(data.license === "None") {
     return ""
   } else {
-    return data.license
+    return `* [License](#license)`
   }
 }
 
 // TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(data) {}
+// If there is no license, returns an empty string
+function renderLicenseSection(data) {
+  if(data.license === "None") {
+    return ""
+  } else {
+    return `## License
+  ${renderLicenseBadge(data)}`
+  }
+}
 
 // function to generate markdown for README
 function generateMarkdown(data) {
@@ -40,7 +47,7 @@ function generateMarkdown(data) {
   * [Description](#description)
   * [Installation](#installation)
   * [Usage](#usage)
-  * [License](#license)
+  ${renderLicenseLink(data)}
   * [Contributing](#contributing)
   * [Tests](#tests)
   * [Questions](#questions)
@@ -54,9 +61,7 @@ function generateMarkdown(data) {
   ## Usage
   ${data.usage}
 
-  ## License
-  ${renderLicenseLink(data)}
-  ${renderLicenseBadge(data)}
+  ${renderLicenseSection(data)}
 
   ## Contributing
   ${data.contributing}
@@ -65,10 +70,8 @@ function generateMarkdown(data) {
   ${data.tests}
 
   ## Questions
-  If you find any bugs or have any questions, feel free to reach out to me through GitHub at ${data.questions1} or email ${data.questions2}. Thanks and happy coding!
+  If you find any bugs or have any questions, feel free to reach out to me through GitHub at  https://github.com/${data.questions1} or <a href="mailto:${data.questions2}">Email Here</a>. Thanks and happy coding!
 `;
 }
-// TODO: explore option to create hyperlink for github or email response
 
-// TODO: create tests built into app
 module.exports = generateMarkdown;

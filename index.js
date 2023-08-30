@@ -8,37 +8,44 @@ const questions = [
     {
         type: "input",
         name: "title",
-        message: "What is the title of your project?"
+        message: "What is the title of your project?",
     },
     {
         type: "input",
         name: "description",
-        message: "What is the description of your project?"
+        message: "What is the description of your project?",
     },
     {
         type: "input",
         name: "installation",
-        message: "What would you like to add to your Installation section?"
+        message: "What would you like to add to your Installation section?",
     },
     {
         type: "input",
         name: "usage",
-        message: "What would you like to add to your Usage section?"
+        message: "What would you like to add to your Usage section?",
     },
     {
-        type: "input",
+        type: "list",
         name: "license",
-        message: "Which license would you like to use?"
+        message: "Which license would you like to use?",
+        choices: ["None",
+        "MIT License",
+        "Apache License 2.0",
+        "BSD 3-Clause License",
+        "GNU GPL v3",
+        "ISC License",
+        "The Unlicense"]
     },
     {
         type: "input",
         name: "contributing",
-        message: "What would you like to add to your contribution section?"
+        message: "What would you like to add to your contribution section?",
     },
     {
         type: "input",
         name: "tests",
-        message: "What would you like to add to your tests section?"
+        message: "What would you like to add to your tests section?",
     },
     {
         type: "input",
