@@ -6,7 +6,6 @@
   * [Usage](#usage)
   * [License](#license)
   * [Contributing](#contributing)
-  * [Tests](#tests)
   * [Questions](#questions)
 
   ## Description
@@ -25,6 +24,7 @@
   5. Once your new README.md file has been created, feel free to edit and add extra information or formatting necessary. Also feel free to change your license badge's color by simply deleting the color text that is already in its link and then replacing it with your desired color's name.
   6. Feel free to watch this [Demo](https://drive.google.com/file/d/1ob2Oa8tCl4azdXnCM8cSs12apJhPwJGy/view) that includes a walkthrough of README-Quickly's command-line process. 
 
+<img width="1511" alt="screenshot" src="https://github.com/Git-BritHub/README-Quickly/assets/130286884/83020fd7-7267-41f4-ad0b-d37b9d58c313">
 
   ## License
   [![License: MIT](https://img.shields.io/badge/License-MIT-aqua.svg)](https://opensource.org/licenses/MIT)
