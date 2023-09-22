@@ -41,36 +41,36 @@ function renderLicenseSection(data) {
 
 // function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+return `# ${data.title}
 
-  ## Table of Contents
-  * [Description](#description)
-  * [Installation](#installation)
-  * [Usage](#usage)
-  ${renderLicenseLink(data)}
-  * [Contributing](#contributing)
-  * [Tests](#tests)
-  * [Questions](#questions)
+## Table of Contents
+* [Description](#description)
+* [Installation](#installation)
+* [Usage](#usage)
+${renderLicenseLink(data)}
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
 
-  ## Description
-  ${data.description}
+## Description
+${data.description}
 
-  ## Installation
-  ${data.installation}
+## Installation
+${data.installation}
 
-  ## Usage
-  ${data.usage}
+## Usage
+${data.usage}
 
-  ${renderLicenseSection(data)}
+${renderLicenseSection(data)}
 
-  ## Contributing
-  ${data.contributing}
+## Contributing
+${data.contributing}
 
-  ## Tests
-  ${data.tests}
+## Tests
+${data.tests}
 
-  ## Questions
-  If you find any bugs or have any questions, feel free to reach out to me through GitHub at  https://github.com/${data.questions1} or <a href="mailto:${data.questions2}">Email Here</a>. Thanks and happy coding!
+## Questions
+If you find any bugs or have any questions, feel free to reach out to me through GitHub at  https://github.com/${data.questions1} or <ahref="mailto:${data.questions2}">Email Here</ahref=>. Thanks and happy coding!
 `;
 }
 
