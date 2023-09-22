@@ -28,7 +28,7 @@ function renderLicenseLink(data) {
   }
 }
 
-// TODO: Create a function that returns the license section of README
+// Create a function that returns the license section of README
 // If there is no license, returns an empty string
 function renderLicenseSection(data) {
   if(data.license === "None") {
